@@ -108,3 +108,18 @@ header{
     font-size: 3rem;
     color: #fff;
 }
+
+.verde{
+    border: 3px solid #3ccf1a;
+    box-shadow: 0 0 10px #4bc62e;
+}
+
+.rojo{
+    border: 3px solid #d3030e;
+    box-shadow: 0 0 10px #cc2a2a;
+}
+
+.gris{
+    border: 3px solid #d0c7c7;
+    box-shadow: 0 0 10px #bfb6b6;
+}
