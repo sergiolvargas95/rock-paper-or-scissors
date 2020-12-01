@@ -30,7 +30,7 @@ function ganar(opcionUser, opcionPc){
     userScore_span.innerHTML = userScore;
     const smallUser = "(USER)".fontsize(1);
     const smallPC = "(PC)".fontsize(1);
-    result_div.innerHTML = convertirLetra(opcionUser)+smallUser+" le gana a "+ convertirLetra(opcionPc)+smallPC+" ¡Has ganado! ";
+    result_div.innerHTML = convertirLetra(opcionUser)+smallUser+" le gana a "+ convertirLetra(opcionPc)+smallPC+"<br> ¡Has ganado! ";
     const userChoice_div = document.getElementById(opcionUser);
     const pcChoice_div = document.getElementById(opcionPc);
     userChoice_div.classList.add('verde');
@@ -44,7 +44,7 @@ function ganar(opcionUser, opcionPc){
 function pierda(opcionUser, opcionPc){
     compScore++;
     compScore_span.innerHTML = compScore;
-    result_div.innerHTML = convertirLetra(opcionPc)+smallPC+" le gana a "+ convertirLetra(opcionUser)+smallUser+" ¡Has perdido! ";
+    result_div.innerHTML = convertirLetra(opcionPc)+smallPC+" le gana a "+ convertirLetra(opcionUser)+smallUser+"<br> ¡Has perdido! ";
     const userChoice_div = document.getElementById(opcionUser);
     const pcChoice_div = document.getElementById(opcionPc);
     userChoice_div.classList.add('rojo');
@@ -56,7 +56,7 @@ function pierda(opcionUser, opcionPc){
 }
 
 function empate(opcionUser, opcionPc){
-    result_div.innerHTML = "Ambos eligieron "+convertirLetra(opcionUser)+" ¡Es un empate!";
+    result_div.innerHTML = "Ambos eligieron "+convertirLetra(opcionUser)+"<br> ¡Es un empate!";
     const opcion_div = document.getElementById(opcionUser);
     opcion_div.classList.add('gris');
     setTimeout(function(){
