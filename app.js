@@ -28,7 +28,9 @@ function convertirLetra(opcion){
 function ganar(opcionUser, opcionPc){
     userScore++;
     userScore_span.innerHTML = userScore;
-    result_div.innerHTML = convertirLetra(opcionUser)+" le gana a "+ convertirLetra(opcionPc) +" ¡Has ganado! ";
+    const smallUser = "(USER)".fontsize(1);
+    const smallPC = "(PC)".fontsize(1);
+    result_div.innerHTML = convertirLetra(opcionUser)+smallUser+" le gana a "+ convertirLetra(opcionPc)+smallPC+" ¡Has ganado! ";
     const userChoice_div = document.getElementById(opcionUser);
     const pcChoice_div = document.getElementById(opcionPc);
     userChoice_div.classList.add('verde');
@@ -42,7 +44,7 @@ function ganar(opcionUser, opcionPc){
 function pierda(opcionUser, opcionPc){
     compScore++;
     compScore_span.innerHTML = compScore;
-    result_div.innerHTML = convertirLetra(opcionPc)+" le gana a "+ convertirLetra(opcionUser) +" ¡Has perdido! ";
+    result_div.innerHTML = convertirLetra(opcionPc)+smallPC+" le gana a "+ convertirLetra(opcionUser)+smallUser+" ¡Has perdido! ";
     const userChoice_div = document.getElementById(opcionUser);
     const pcChoice_div = document.getElementById(opcionPc);
     userChoice_div.classList.add('rojo');
