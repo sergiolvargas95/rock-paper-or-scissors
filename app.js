@@ -1,0 +1,9 @@
+let userScore = 0;
+let compScore = 0;
+const userScore_span = document.getElementById('user-score');
+const compScore_span = document.getElementById('comp-score');
+const scoreBoard_div = document.querySelector('marcador');
+const result_div = document.querySelector('result p');
+const piedra_div = document.getElementById('r');
+const papel_div = document.getElementById('p');
+const tijera_div = document.getElementById('t');
